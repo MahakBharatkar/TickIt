@@ -8,28 +8,34 @@ const TaskForm = ({
   initialData = {},
   cancelFunction = () => {},
 }) => {
-  const {
-    handleSubmit,
-    control,
-    formState: { errors },
-    reset,
-  } = useForm({
-    defaultValues: initialData,
-    // {
-    //     title: '',
-    //     description: '',
-    //     priority: 'medium',
-    // }
-  });
 
   let isEdit = false;
   if (initialData.id) {
     isEdit = true;
   }
 
+  const formDefaultValues = isEdit? initialData : {
+    title: '',
+    description: '',
+    priority: 'Medium',
+} ;
+
+  const {
+    handleSubmit,
+    control,
+    formState: { errors },
+    reset,
+  } = useForm({
+    defaultValues: formDefaultValues,
+    
+  });
+
+  
+
   const onFormSubmit = (data) => {
     onSubmit(data);
     reset();
+    cancelFunction();
   };
 
   return (

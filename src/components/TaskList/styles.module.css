@@ -1,5 +1,9 @@
 .task_list {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  width: 40%;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }

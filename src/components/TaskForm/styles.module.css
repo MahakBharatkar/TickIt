@@ -1,11 +1,7 @@
 .form_container {
   display: flex;
   justify-content: space-between;
-  width: 40%;
-
-  @media (max-width: 576px) {
-    width: 100%;
-  }
+  
 }
 
 .button_container {
@@ -44,7 +40,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   background: linear-gradient(#212121, #212121) padding-box,
     linear-gradient(145deg, transparent 12%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;

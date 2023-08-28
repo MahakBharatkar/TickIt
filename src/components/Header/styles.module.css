@@ -1,0 +1,33 @@
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  background: -webkit-linear-gradient(#e81cff, #40c9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search_input{
+
+  border-radius: 6px;
+  border: 1px solid #e81cff;
+  font-family: inherit;
+  height: 32px;
+  padding: 8px;
+  color: #fff;
+  width: 60%;
+  margin-left: 20px;
+
+  &:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+
+}
+
+

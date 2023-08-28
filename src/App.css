@@ -6,14 +6,6 @@ html {
   box-sizing: border-box;
   background-color: #212121;
 }
-.heading {
-  display: flex;
-  justify-content: center;
-  background: -webkit-linear-gradient(#e81cff, #40c9ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .add_new_button {
   width: fit-content;
@@ -29,4 +21,8 @@ html {
   background-position: left center;
   font-family: inherit;
   font-size: 12px;
+}
+
+.app-container{
+  padding: 0px 20px;
 }

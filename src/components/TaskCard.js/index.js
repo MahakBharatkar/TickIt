@@ -16,7 +16,6 @@ const TaskCard = ({ task, handleDeleteTask, onEdit }) => {
 
   const handleEditTask = (updatedData) => {
     onEdit({ id, updatedData });
-    setEditMode(false);
   };
 
   return (
