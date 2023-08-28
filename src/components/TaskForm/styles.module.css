@@ -1,0 +1,122 @@
+.form_container {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+}
+
+.add_button {
+  display: flex;
+  padding: 0.5em 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  background: linear-gradient(171deg, #e81cff 0%, #40c9ff 100%);
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.cancel_button {
+  background: #313131;
+  border: 1px solid #414141;
+  border-radius: 30px;
+  font-family: inherit;
+  color: #fff;
+  display: flex;
+  padding: 0.5em 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 12%, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.error_message {
+  color: #ffa69e;
+  font-size: 12px;
+}
+
+.controls_container {
+  width: 80%;
+  margin-left: 20px;
+}
+
+.input_group {
+  margin-bottom: 14px;
+}
+
+.input_group textarea {
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  resize: none;
+  height: 96px;
+  border: 1px solid #414141;
+  font-family: inherit;
+  color: #fff;
+
+  &:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+}
+
+.input_group select {
+  border-radius: 6px;
+  border: 1px solid #414141;
+  font-family: inherit;
+  height: 24px;
+  min-width: 120px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #717171;
+
+  &:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+}
+
+.input_group input {
+  border-radius: 6px;
+  border: 1px solid #414141;
+  font-family: inherit;
+  height: 24px;
+  min-width: 100px;
+  padding: 8px;
+  color: #fff;
+
+  &:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+}

@@ -1,0 +1,67 @@
+.task_card {
+  width: 40%;
+  border: 1px solid transparent;
+  padding: 10px;
+  max-width: 400px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #fff;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, #e81cff, #40c9ff) border-box;
+
+  @media (max-width: 576px) {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.title_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priority_tag {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 20px;
+  max-height: 28px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  background: #cfeaed;
+}
+
+.task_title {
+  font-weight: 500;
+}
+
+.task_description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.expanded .task_description {
+  -webkit-line-clamp: unset;
+}
+
+.edit_btn {
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete_btn {
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
