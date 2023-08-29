@@ -9,6 +9,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [addNewTask, setAddNewTask] = useState(false);
   const [searchInput, setSearchInput] = useState("");
+  const [activeTab, setActiveTab] = useState("");
 
   const handleAddTask = (task) => {
     const newTask = { id: uuidv4(), ...task };
@@ -22,26 +23,24 @@ function App() {
   return (
     <div className="App">
       <div className="app-container">
-      <Header handleInputChange={handleInputChange} searchInput={searchInput}/>
-      
+        <Header
+          handleInputChange={handleInputChange}
+          searchInput={searchInput}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          setAddNewTask={setAddNewTask}
+        />
 
-      {addNewTask ? (
-        <TaskForm onSubmit={handleAddTask} cancelFunction={setAddNewTask} />
-      ) : (
-        <div>
-          <button
-            className="add_new_button"
-            onClick={() => setAddNewTask(true)}
-          >
-            + New Task
-          </button>
-        </div>
-      )}
-      <TaskList tasks={tasks} setTasks={setTasks} searchInput={searchInput} />
-
+        {addNewTask ? (
+          <TaskForm onSubmit={handleAddTask} cancelFunction={setAddNewTask} />
+        ) : null}
+        <TaskList
+          tasks={tasks}
+          setTasks={setTasks}
+          searchInput={searchInput}
+          activeTab={activeTab}
+        />
       </div>
-
-      
     </div>
   );
 }

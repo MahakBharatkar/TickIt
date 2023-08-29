@@ -7,22 +7,6 @@ html {
   background-color: #212121;
 }
 
-.add_new_button {
-  width: fit-content;
-  display: flex;
-  padding: 1em 1.5rem;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 30px;
-  background: linear-gradient(171deg, #e81cff 0%, #40c9ff 100%);
-  background-size: 300%;
-  color: #fff;
-  border: none;
-  background-position: left center;
-  font-family: inherit;
-  font-size: 12px;
-}
-
 .app-container{
   padding: 0px 20px;
 }

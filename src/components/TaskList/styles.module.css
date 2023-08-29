@@ -1,7 +1,7 @@
 .task_list {
   display: flex;
   align-items: center;
-  width: 40%;
+  flex-direction: column;
 
   @media (max-width: 576px) {
     width: 100%;
