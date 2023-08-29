@@ -8,17 +8,18 @@ const TaskForm = ({
   initialData = {},
   cancelFunction = () => {},
 }) => {
-
   let isEdit = false;
   if (initialData.id) {
     isEdit = true;
   }
 
-  const formDefaultValues = isEdit? initialData : {
-    title: '',
-    description: '',
-    priority: 'Medium',
-} ;
+  const formDefaultValues = isEdit
+    ? initialData
+    : {
+        title: "",
+        description: "",
+        priority: "Medium",
+      };
 
   const {
     handleSubmit,
@@ -27,10 +28,7 @@ const TaskForm = ({
     reset,
   } = useForm({
     defaultValues: formDefaultValues,
-    
   });
-
-  
 
   const onFormSubmit = (data) => {
     onSubmit(data);
