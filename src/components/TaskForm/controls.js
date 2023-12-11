@@ -28,6 +28,16 @@ const controls = [
       { label: "High", value: "High" },
     ],
   },
+  {
+    type: "select",
+    label: "Column",
+    name: "column",
+    options: [
+      { label: "To do", value: "column1" },
+      { label: "In progress", value: "column2" },
+      { label: "Done", value: "column3" },
+    ],
+  },
 ];
 
 export default controls;

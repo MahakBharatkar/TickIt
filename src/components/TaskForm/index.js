@@ -19,6 +19,7 @@ const TaskForm = ({
         title: "",
         description: "",
         priority: "Medium",
+        column: "column1",
       };
 
   const {

@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import "./App.css";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import Header from "./components/Header";
+import { initialColumns } from "./components/initialColumnData";
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [columns, setColumns] = useState(initialColumns);
   const [addNewTask, setAddNewTask] = useState(false);
   const [searchInput, setSearchInput] = useState("");
   const [activeTab, setActiveTab] = useState("");
